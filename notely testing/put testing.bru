@@ -1,0 +1,17 @@
+meta {
+  name: put testing
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:5001/api/notes/6962126bb3240c8bc63526ea
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "content":"updated content 123"
+  }
+}
